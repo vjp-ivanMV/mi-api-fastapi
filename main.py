@@ -13,5 +13,8 @@ def home():
 
 @app.get("/countries")
 def get_data():
-    return data
+    # Accede al valor de la clave 'countries' en el JSON
+    # para que devuelva directamente la lista de países.
+    return data.get("countries", [])
+
 
