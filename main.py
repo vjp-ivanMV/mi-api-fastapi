@@ -11,6 +11,7 @@ with open("db.json", "r", encoding="utf-8") as f:
 def home():
     return {"mensaje": "API funcionando"}
 
-@app.get("/api")
+@app.get("/countries")
 def get_data():
     return data
+
